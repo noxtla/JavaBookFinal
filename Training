@@ -1,0 +1,19 @@
+/*Palindrome*/
+
+
+boolean solution(String inputString) {
+    boolean review = false;
+    int j = inputString.length()-1;
+    for (int i=0; i<inputString.length(); i++){
+        if (inputString.charAt(i)==inputString.charAt(j)) {
+            j--;
+            review = true;
+        }
+        else{
+            review = false;
+            break;
+        }
+    }
+    return review;
+}
+
